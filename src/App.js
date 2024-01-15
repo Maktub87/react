@@ -1,9 +1,22 @@
-import logo from './logo.svg';
+
 import './App.css';
 
+import Navbar from "./components/navbar/Navbar";
+
+import Counter from "./components/Counter/Counter";
+
+
+
+
 function App() {
+
   return (
-    <h1>Hola Mundo</h1>
+    <>
+      <Navbar />
+      <Counter />
+
+    </>
+
   );
 }
 
