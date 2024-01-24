@@ -14,7 +14,6 @@ function Navbar() {
       
     <div className="navBar">
       <img src={logo} alt="logoprincipal" className='logo'/>
-      <h1>GSP Picaflor</h1>
       <MenuList onItemClick={handleMenuClick} />
       <CartWidget number={7} />
     </div>

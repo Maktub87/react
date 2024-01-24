@@ -9,6 +9,7 @@ ul {
 }
 
 li {
+    font-size: 1.5rem;
     margin-right: 20px;
 }
 
@@ -19,5 +20,5 @@ a {
 }
 
 a:hover {
-    color: #3498db;
+    color: #149247;
 }
