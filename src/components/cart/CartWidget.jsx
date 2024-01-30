@@ -14,4 +14,4 @@ function CartWidget( {number}) {
   )
 }
 
-export default CartWidget
+export default CartWidget;
