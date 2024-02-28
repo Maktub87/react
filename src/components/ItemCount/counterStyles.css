@@ -20,3 +20,18 @@
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
   }
+  .counter{
+    margin: 3px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+  }
+  .botonvalor{
+    margin: 3px;
+    width: 20px;
+    height: 20px;
+  }
+  .valor{
+    margin-left: 20px;
+  }

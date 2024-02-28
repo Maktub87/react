@@ -24,10 +24,10 @@ function Navbar() {
           <NavLink to="/categoria/Fertilizante">Fertilizantes</NavLink>
         </li>
         <li>
-          <NavLink to="/category/Macetas">Macetas</NavLink>
+          <NavLink to="/categoria/Macetas">Macetas</NavLink>
         </li>
         <li>
-          <NavLink to="/category/Sustratos">Sustratos</NavLink>
+          <NavLink to="/categoria/Sustratos">Sustratos</NavLink>
         </li>
         
       </ul>

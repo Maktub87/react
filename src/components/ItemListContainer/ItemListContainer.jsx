@@ -10,17 +10,17 @@ import Spinner from '../commons/Spinner/Spinner';
 
 function ItemListContainer({ greeting }) {
   const [items, setItems] = useState([]);
-  const { categoryId } = useParams();
+  const { categoriaId } = useParams();
   const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
    
 
     const fetchProducts = async () => {
-      const asyncFunc = categoryId ? getProductsByCategory : getProducts;
+      const asyncFunc = categoriaId ? getProductsByCategory : getProducts;
       setIsLoading(true);
       try {
-        const res = await asyncFunc(categoryId);
+        const res = await asyncFunc(categoriaId);
         setItems(res);
         setIsLoading(false);
       } catch (err) {
@@ -29,7 +29,7 @@ function ItemListContainer({ greeting }) {
       }
     };
     fetchProducts();
-  }, [categoryId, setIsLoading]);
+  }, [categoriaId, setIsLoading]);
 
   if (isLoading) return <Spinner isLoading={isLoading} />;
 

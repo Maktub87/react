@@ -6,7 +6,7 @@ import './containerStyles.css';
 import { useParams } from 'react-router-dom';
 import Spinner from '../commons/Spinner/Spinner';
 
-function ItemDetailContainer() {
+function DetalleContainer() {
   const { itemId } = useParams();
   const [productDetail, setProductDetail] = useState({
     data: null,
@@ -37,4 +37,4 @@ function ItemDetailContainer() {
   );
 }
 
-export default ItemDetailContainer;
+export default DetalleContainer;

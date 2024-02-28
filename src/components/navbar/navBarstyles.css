@@ -21,27 +21,29 @@ body{
   .logo {
     font-size: 24px;
     font-weight: bold;
+    width: 200px;
   }
   
-  .navMenu {
+  .categoryList {
     list-style: none;
     display: flex;
+    color: #90FEE5;
   }
   
-  .navMenu li {
+  .categoryList li {
     margin-right: 20px;
   }
   
-  .navMenu a {
+  .categoryList a {
     text-decoration: none;
     color: cadetblue;
     font-weight: bold;
   }
   
-  .navMenu a:hover {
+  .categoryList a:hover {
     color: #3498db; 
   }
-  .logo{
-    width: 200px;
-  }
   
+  .categoryList li a.active{
+    color: #333;
+  }

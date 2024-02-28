@@ -4,7 +4,7 @@ import { useState } from 'react';
 import Button from '../commons/buttons/Buttons';
 import { Link } from 'react-router-dom';
 
-function ItemDetail({ Name, Categoria, cantidad, img, descripcion, id }) {
+function ItemDetail({ Name, categoria, cantidad, img, descripcion, id }) {
     const [itemAddCart, setItemAddCart] = useState(0);
     const onAdd = (quantity) => {
         setItemAddCart(quantity);
@@ -16,7 +16,7 @@ function ItemDetail({ Name, Categoria, cantidad, img, descripcion, id }) {
             <h3>{Name}</h3>
             <p> {descripcion}</p>
             <p>stock: {cantidad} </p>
-            <p>Categoria: {Categoria}</p>
+            <p>Categoria: {categoria}</p>
             <div className="actionCardDetail">
                 {itemAddCart > 0 ? (
                     <Link to="/cart">

@@ -1,4 +1,4 @@
-import DotLoader from 'react-spinners/DotLoader';
+import ClockLoader from 'react-spinners/ClockLoader';
 import './SpinnerStyles.css';
 const override = {
   display: 'block',
@@ -9,8 +9,8 @@ const override = {
 function Spinner({ isLoading }) {
   return (
     <div className="containerSpinner">
-      <DotLoader
-        color="#ebe4f3"
+      <ClockLoader
+        color="#36d7b7"
         loading={isLoading}
         cssOverride={override}
         size={50}
