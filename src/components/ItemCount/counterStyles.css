@@ -1,37 +1,65 @@
 .item {
-    width: 300px;
-    min-height: 360px;
-    border-radius: 8px;
-    box-shadow: 0px 11px 14px 2px rgba(0, 0, 0, 0.14);
-    padding: 10px;
-    transition: all 0.3s ease;
-    text-align: center;
-  }
+  width: 300px;
+  min-height: 360px;
+  border-radius: 8px;
+  box-shadow: 0px 11px 14px 2px rgba(0, 0, 0, 0.14);
+  padding: 10px;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.item:hover {
+  box-shadow: 0 10px 20px 1px gray;
+  transform: scale(1.03);
+  cursor: pointer;
+}
+
+.item img {
+  object-fit: cover;
+  width: 100%;
+  height: 250px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.counter {
+  margin: 3px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+
+}
+
+.botonvalor {
+  width: 35px;
+  height: 34px;
+  margin: 10px;
+  font-size: 20px;
+  border-radius: 50px;
+  border: transparent;
+  background-color: rgb(115, 11, 212);
+  transition: all 0.3s ease;
+}
+.botonvalor:hover {
+  background-color: #b08cd8;
+  transform: scale(1.01);
+  cursor: pointer;
+}
+
+.valor {
+  font-size: 2 rem;
+}
+.btnagregar{
+  height: 40px;
+  width:250px;
+  background-color: #b08cd8;
+  color: black;
+  font-size: 1rem;
   
-  .item:hover {
-    box-shadow: 0 10px 20px 1px gray;
-    transform: scale(1.03);
-    cursor: pointer;
-  }
-  .item img {
-    object-fit: cover;
-    width: 100%;
-    height: 250px;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-  }
-  .counter{
-    margin: 3px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    
-  }
-  .botonvalor{
-    margin: 3px;
-    width: 20px;
-    height: 20px;
-  }
-  .valor{
-    margin-left: 20px;
-  }
+}
+.btnagregar:hover{
+  background-color: rgb(115, 11, 212);
+  transform: scale(1.01);
+  cursor: pointer;
+}

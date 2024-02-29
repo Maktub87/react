@@ -9,10 +9,10 @@ function Counter({ onAdd }) {
     <>
       <div className="counter">
         <button className="botonvalor" onClick={subtraction}>-</button>
-        <button className="botonvalor" onClick={add}>+</button>
         <p className='valor'>{valor}</p>
+        <button className="botonvalor" onClick={add}>+</button>
       </div>
-      <Button disabled={valor === 0} onClick={() => onAdd(valor)}>
+      <Button className="btnagregar" disabled={valor === 0} onClick={() => onAdd(valor)}>
         Agregar al carrito
       </Button>
     </>
